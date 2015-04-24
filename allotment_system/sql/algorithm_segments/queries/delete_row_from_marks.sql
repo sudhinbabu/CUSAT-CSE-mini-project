@@ -1,0 +1,1 @@
+delete from marks where awarded_mark = 167 and user_id =2;

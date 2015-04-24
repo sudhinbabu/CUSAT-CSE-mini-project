@@ -1,0 +1,59 @@
+******************FOR STEP 1
+##or getting total no of seats from courses table.
+
+SELECT
+   SUM(seats) AS total_seats 
+FROM
+   courses
+
+
+******************FOR STEP 2
+##For getting reservation seats and total_seats.
+
+
+SELECT
+   SUM( reservation_percentage ) * 500 DIV 100 AS reserved_seats ,
+   (500- SUM(reservation_percentage ) * 500  DIV 100 )  AS total_seats  
+FROM
+   religions            
+
+
+
+******************FOR STEP 3
+
+##get index mark based on 1500
+
+
+SELECT
+   users.user_id,
+   users.name ,
+   ( SUM(marks.awarded_mark) / sum(marks.max_mark) * 1500  ) AS index_mark  
+FROM
+   users 
+JOIN
+   marks 
+      ON marks.user_id = users.user_id 
+GROUP BY
+   users.name 
+ORDER BY
+   index_mark DESC
+
+**  with limit. 
+
+
+SELECT
+   users.user_id,
+   users.name ,
+   ( SUM(marks.awarded_mark) / sum(marks.max_mark) * 1500  ) AS index_mark  
+FROM
+   users 
+JOIN
+   marks 
+      ON marks.user_id = users.user_id 
+GROUP BY
+   users.name 
+ORDER BY
+   index_mark DESC LIMIT 5
+
+
+**FOR STEP 4

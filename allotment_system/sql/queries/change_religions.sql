@@ -1,0 +1,1 @@
+UPDATE applications SET first_preference = 8 WHERE religion_id = 14

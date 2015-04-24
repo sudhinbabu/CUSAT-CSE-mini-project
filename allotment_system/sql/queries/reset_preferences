@@ -1,0 +1,1 @@
+UPDATE applications SET  current_preference = 1 ;

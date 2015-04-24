@@ -1,0 +1,243 @@
+@font-face {
+    font-family: glyphicons;
+    src: url(fonts/glyphicons/glyphicons-halflings-regular.eot)format('embedded-opentype');
+    src: url(fonts/glyphicons/glyphicons-halflings-regular.svg)format('svg');
+    src: url(fonts/glyphicons/glyphicons-halflings-regular.ttf)format('truetype');
+    src: url(fonts/glyphicons/glyphicons-halflings-regular.woff) format('woff');
+     src: url(fonts/glyphicons/glyphicons-halflings-regular.woff2) format('woff2'); /* Super Modern Browsers */
+}
+
+
+
+body{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+input{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.container{
+	width : 1000px;
+	margin: 0 auto;
+}
+
+.heading{
+	text-transform: uppercase;
+	color: #274B8E;
+	
+}
+.form-control{
+	width: 250px;
+}
+.input-error-msg{
+	display: inline-block;
+	font-size: 13px;
+	color: #B81D1D;
+}
+.text-align-center{
+text-align: center;	
+}
+
+.main-content{
+	overflow: hidden;
+}
+
+
+.success-msg{
+	font-size: 14px;
+	color: #1EA446;
+}
+.logout{
+	display: inline-block;
+	float: right;
+}
+.logout a{
+	text-decoration: none;
+	color: #E82455;
+}
+
+
+
+
+
+
+/*nav.header-nav-menu , nav.footer-nav-menu ul{
+	
+}*/
+
+nav.header-nav-menu li , nav.footer-nav-menu ul li{
+	list-style-type: none;
+	display: inline-block;
+	margin-left: 0;
+}
+nav.header-nav-menu li a, nav.footer-nav-menu ul li a{
+	text-decoration: none;
+	color: #054511;
+}
+nav.header-nav-menu li{
+	margin-right: 10px;
+}
+nav.header-nav-menu li a{
+	font-size: 18px;
+}
+nav.footer-nav-menu li a{
+	font-size: 14px;
+}
+
+ul.news  li{
+	list-style-type: circle;
+}
+nav.footer-nav-menu li  a.developer{
+	color: #E8120D;
+}
+.footer-nav-menu{
+	margin: 30px auto;
+}
+/*registration form*/
+.register-table,.user-details-table, .profile-pic-edit-form{
+	display: inline-block;
+}
+.user-detials-edit-form, .user-details-form{
+	vertical-align: top;
+	display: inline-block;
+}
+
+.upload_pic{
+	cursor: pointer;
+}
+#uploadingPic{
+	vertical-align: top;
+	margin-left: 20px;
+}
+
+
+form.registation-form label.reg-input-label{
+	text-transform: capitalize;
+}
+form.registation-form textarea,input{
+	width: 150px;
+}
+
+form.registation-form td.input{
+	width: 100px;
+}
+ul.news{
+	margin-left: 0;
+	padding-left: 0;
+}
+ul.news li.news-item textarea{
+	overflow: auto;
+}
+ul.news li.news-item, li.actions ,li.news-date  {
+	vertical-align: top;
+	margin-top: 0;
+	list-style-type: none;
+	display: inline-block;
+}
+ul.news-list li.news-wrapper{
+	vertical-align: top;
+	margin-top: 0;
+	list-style-type: none;
+	display: inline-block;
+}
+
+span.news-date-data{
+font-size: 14px;
+color: #B59737;
+font-weight: bold;
+}
+
+span.add-news{
+font-size: 20px;
+color: #5CB85C;
+font-weight: bold;
+}
+ul.news{
+	margin-top: 10px;
+}
+table.news-edit-table td{
+	padding: 3px;
+}
+
+
+/*#registration form*/
+
+/*religion styles*/
+
+.religion-add-table input[type=text]{
+	font-size: 18px;
+	/*margin-left: 5px;*/
+	margin: 5px;
+	height: 30px;
+
+}
+/*.religion-add-table td.action{
+	width: 100px;
+}*/
+.add-religion-btn{
+	text-transform: uppercase;
+	margin-left: 10px;
+	width:100px;
+}
+.religion-edit-btn{
+margin: 2px;
+}
+
+/*# religion styles*/
+
+
+
+.content-full{
+	width: 100%;
+	float: left;
+}
+.active{
+background:#C0C9DA;
+padding: 5px;
+-webkit-border-radius: 5px;
+        border-radius: 5px;
+}
+
+
+
+.content{
+	padding-right: 10px;
+	float: left;
+	width: 60%;
+}
+
+
+.content-appications{
+	
+}
+
+
+.side-bar{
+	float: left;
+	width: 40%;
+}
+.dependency-add-form,.dependency-edit-form{
+	margin-bottom: 0;
+}
+ul.courses li{
+	list-style-type: decimal;
+} 
+
+#ApplicantMarks h4{
+	margin: 0;
+}
+#ApplicantMarks label{
+	margin: auto 5px;
+}
+
+
+.options-radio{
+	display: inline-block;
+}
+.options-radio input[type="radio"]{
+	width: 20px;
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+} 

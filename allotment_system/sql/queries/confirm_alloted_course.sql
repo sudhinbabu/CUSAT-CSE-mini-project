@@ -1,0 +1,1 @@
+UPDATE applications SET status = "confirmed" WHERE user_id IN(57,33,40,55);

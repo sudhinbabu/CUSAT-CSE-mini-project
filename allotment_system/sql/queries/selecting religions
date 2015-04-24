@@ -1,0 +1,8 @@
+SELECT 
+    *
+FROM
+    religions
+WHERE
+    reservation_percentage > 0
+JOIN applications ON applications.religion_id = religions.id
+ORDER BY reservation_percentage DESC

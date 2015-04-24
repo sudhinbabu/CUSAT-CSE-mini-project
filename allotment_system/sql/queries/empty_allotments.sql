@@ -1,0 +1,1 @@
+TRUNCATE allotment_system.allotments;

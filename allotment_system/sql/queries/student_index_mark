@@ -1,0 +1,11 @@
+SELECT 
+    sum(marks.awarded_mark),marks.user_id
+FROM
+    courses
+        JOIN
+    course_dependencies ON courses.course_id = course_dependencies.course_id
+        JOIN
+    marks ON course_dependencies.dependency = marks.subject_name
+WHERE
+    courses.course_id = 1
+        AND marks.user_id = 1;
