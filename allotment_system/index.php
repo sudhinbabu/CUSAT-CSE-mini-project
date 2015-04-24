@@ -6,10 +6,13 @@ require_once 'lib/db_class.php';
 //check if login form is submitted
 if(isset($_POST['login'])){
 	require 'lib/validation_class.php';
-	$security =  new validation();
+	//with out using validation class
+
+
+	// $security =  new validation();
 	//check user type.
 
-		$result = $security->validate_credentials_with_db($_POST);
+		// $result = $security->validate_credentials_with_db($_POST);
 		if(!$result['error']){
 			$_SESSION['user_type'] = $result['user_type'];
 			$_SESSION['user_id'] = $result['user_id'];
